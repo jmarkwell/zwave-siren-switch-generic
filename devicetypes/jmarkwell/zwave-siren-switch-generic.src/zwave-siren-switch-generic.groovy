@@ -1,6 +1,6 @@
 /**
  *  Z-Wave Siren Switch Generic
- *  Build 2018111402
+ *  Build 2018111403
  *
  *  Adapted from Z-Wave Switch Generic
  *
@@ -20,6 +20,7 @@
  *      20181114:
  *          01: Applied updates based on Z-Wave Switch Generic.
  *          02: Rolling back custom device type / cloud incompatible changes.
+ *          03: Modified deficeJoinName.
  *
  *      20170829:
  *          01: Added code for non-GE model compatibility back in
@@ -39,7 +40,7 @@ metadata {
         capability "Sensor"
         capability "Switch"
         
-        fingerprint inClusters: "0x25", deviceJoinName: "Z-Wave Switch"
+        fingerprint inClusters: "0x25", deviceJoinName: "Z-Wave Siren Switch"
         
         fingerprint mfr: "001A", prod: "5244", deviceJoinName: "Eaton RF Receptacle"
         fingerprint mfr: "001A", prod: "534C", model: "0000", deviceJoinName: "Eaton RF Master Switch"
