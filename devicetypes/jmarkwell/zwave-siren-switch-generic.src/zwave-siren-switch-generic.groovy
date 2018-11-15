@@ -1,6 +1,6 @@
 /**
  *  Z-Wave Siren Switch Generic
- *  Build 2018111401
+ *  Build 2018111402
  *
  *  Adapted from Z-Wave Switch Generic
  *
@@ -19,6 +19,7 @@
  *      
  *      20181114:
  *          01: Applied updates based on Z-Wave Switch Generic.
+ *          02: Rolling back custom device type / cloud incompatible changes.
  *
  *      20170829:
  *          01: Added code for non-GE model compatibility back in
@@ -28,7 +29,7 @@
  *          Creation
  */
 metadata {
-    definition(name: "Z-Wave Siren Switch Generic", namespace: "jmarkwell", author: "Jordan Markwell", ocfDeviceType: "oic.d.switch", runLocally: true, minHubCoreVersion: '000.019.00012', executeCommandsLocally: true) {
+    definition(name: "Z-Wave Siren Switch Generic", namespace: "jmarkwell", author: "Jordan Markwell") {
         capability "Actuator"
         capability "Alarm"
         capability "Health Check"
