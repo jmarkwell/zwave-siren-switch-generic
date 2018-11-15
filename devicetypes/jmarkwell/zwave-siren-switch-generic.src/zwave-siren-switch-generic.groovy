@@ -20,7 +20,7 @@
  *      20181114:
  *          01: Applied updates based on Z-Wave Switch Generic.
  *          02: Rolling back custom device type / cloud incompatible changes.
- *          03: Modified deficeJoinName.
+ *          03: Modified deviceJoinName.
  *
  *      20170829:
  *          01: Added code for non-GE model compatibility back in
