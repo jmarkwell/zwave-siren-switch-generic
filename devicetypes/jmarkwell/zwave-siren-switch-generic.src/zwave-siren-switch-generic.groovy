@@ -1,6 +1,6 @@
 /**
  *  Z-Wave Siren Switch Generic
- *  Build 2018111403
+ *  Build 2018111404
  *
  *  Adapted from Z-Wave Switch Generic
  *
@@ -21,6 +21,7 @@
  *          01: Applied updates based on Z-Wave Switch Generic.
  *          02: Rolling back custom device type / cloud incompatible changes.
  *          03: Modified deviceJoinName.
+ *          04: Removed device fingerprints. This device handler should be selected manually and not automatically.
  *
  *      20170829:
  *          01: Added code for non-GE model compatibility back in
@@ -39,43 +40,6 @@ metadata {
         capability "Refresh"
         capability "Sensor"
         capability "Switch"
-        
-        fingerprint inClusters: "0x25", deviceJoinName: "Z-Wave Siren Switch"
-        
-        fingerprint mfr: "001A", prod: "5244", deviceJoinName: "Eaton RF Receptacle"
-        fingerprint mfr: "001A", prod: "534C", model: "0000", deviceJoinName: "Eaton RF Master Switch"
-        fingerprint mfr: "001A", prod: "5352", model: "0000", deviceJoinName: "Eaton RF Accessory Switch"
-        fingerprint mfr: "001A", prod: "5354", model: "0003", deviceJoinName: "Eaton RF Appliance Plug-In Module"
-        
-        fingerprint mfr: "0063", prod: "4F50", model: "3031", deviceJoinName: "GE Plug-in Outdoor Switch"
-        fingerprint mfr: "0063", prod: "4F50", model: "3032", deviceJoinName: "GE Plug-in Outdoor Switch"
-        fingerprint mfr: "0063", prod: "5250", model: "3130", deviceJoinName: "GE Plug-in Outdoor Switch"
-        
-        fingerprint mfr: "001D", prod: "0301", model: "0334", deviceJoinName: "Leviton 15A Switch"
-        fingerprint mfr: "001D", prod: "0F01", model: "0334", deviceJoinName: "Leviton 5A Incandescent Switch"
-        fingerprint mfr: "001D", prod: "1603", model: "0334", deviceJoinName: "Leviton 15A Split Duplex Receptacle"
-        fingerprint mfr: "001D", prod: "1A02", model: "0334", deviceJoinName: "Leviton Appliance Module"
-        fingerprint mfr: "001D", prod: "1C02", model: "0334", deviceJoinName: "Leviton Switch"
-        fingerprint mfr: "001D", prod: "1D04", model: "0334", deviceJoinName: "Leviton Outlet"
-        fingerprint mfr: "001D", prod: "3401", model: "0001", deviceJoinName: "Leviton Switch" //Leviton DZ15S
-        
-        fingerprint mfr: "011A", prod: "0101", model: "0102", deviceJoinName: "Enerwave On/Off Switch"
-        fingerprint mfr: "011A", prod: "0101", model: "0603", deviceJoinName: "Enerwave Duplex Receptacle"
-        
-        fingerprint mfr: "0039", prod: "4952", model: "3036", deviceJoinName: "Honeywell Z-Wave In-Wall Smart Switch"
-        fingerprint mfr: "0039", prod: "4952", model: "3037", deviceJoinName: "Honeywell Z-Wave In-Wall Smart Toggle Switch"
-        fingerprint mfr: "0039", prod: "4952", model: "3133", deviceJoinName: "Honeywell Z-Wave In-Wall Tamper Resistant Duplex Receptacle"
-        fingerprint mfr: "0039", prod: "4F50", model: "3032", deviceJoinName: "Honeywell Z-Wave Plug-in Outdoor Smart Switch"
-        fingerprint mfr: "0039", prod: "5052", model: "3033", deviceJoinName: "Honeywell Z-Wave Plug-in Switch (Dual Outlet)"
-        fingerprint mfr: "0039", prod: "5052", model: "3038", deviceJoinName: "Honeywell Z-Wave Plug-in Switch"
-        
-        fingerprint mfr: "014F", prod: "5257", model: "3033", deviceJoinName: "GoControl Wall Relay Switch"
-        fingerprint mfr: "014F", prod: "5753", model: "3535", deviceJoinName: "GoControl Smart In-Wall Switch"
-        
-        //zw:L type:1001 mfr:0307 prod:4447 model:3031 ver:5.06 zwv:4.05 lib:03 cc:5E,86,72,85,59,25,27,73,70,2C,2B,5A,7A role:05 ff:8700 ui:8700
-        fingerprint mfr: "0307", prod: "4447", model: "3031", deviceJoinName: "Satco Plug-In Module"
-        //zw:L type:1001 mfr:0307 prod:4447 model:3033 ver:5.16 zwv:4.34 lib:03 cc:5E,86,72,5A,85,59,73,25,27,70,2C,2B,5B,7A ccOut:5B role:05 ff:8700 ui:8700
-        fingerprint mfr: "0307", prod: "4447", model: "3033", deviceJoinName: "Satco In-Wall Light Switch"
     }
     
     simulator {
